@@ -4,7 +4,8 @@ body {
 }
 
 header,
-.first-section {
+.first-section,
+footer {
     background-color: #1F2937;
 }
 
@@ -22,7 +23,8 @@ li {
 }
 
 a, 
-.first-section p {
+.first-section p,
+.signup-section p {
     text-decoration: none;
     color: #E5E7EB;
     font-size: 18px;
@@ -36,7 +38,8 @@ nav ul {
     gap: 20px;
 }
 
-header h1 {
+header h1 ,
+.signup-section h2 {
     color: #F9FAF8;
     font-size: 24px;
 }    
@@ -62,11 +65,17 @@ header h1 {
     padding: 10px;
     color: #FFFFFF;
     width: 100px;
-    border: none;
 }
 
 #first-button {
     background-color: #3882F6;
+    border: none;
+}
+
+#second-button {
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
 }
 
 .info-section {
@@ -90,3 +99,62 @@ header h1 {
     color: #4b5563;
 }
 
+.quote-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 0px;
+    background-color: #E5E7EB;
+}
+
+.quote-section #quote {
+    font-size: 36px;
+    color: 1F2937;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.quote-section #author{
+    text-align: right;
+} 
+
+.signup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 0px;
+}
+
+.blue-container {
+    background-color: #3b82f6;
+    border-radius: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 0px;
+}
+
+#second-button {
+    background-color: #3b82f6;
+    border-color: #FFFFFF;
+
+}
+
+footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+}
